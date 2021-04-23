@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Form Page</title>
+    <style>
+      #register-form{
+        width: 300px;
+        background-color: white;
+        padding: 24px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .text-label{
+        margin: 0;
+        margin-bottom: 4px;
+        margin-top: 12px;
+      }
+      .input-item{
+        width: 100%;
+      }
+      .input-label{
+        margin-bottom: 18px;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body style="background-color: skyblue;">
+    <h1 style="text-align: center;">SignUp</h1>
+    <form id="register-form">
+      <div>
+        <p class="text-label">Fullname:</p>
+        <input class="input-item" type="text" name="fullname">
+      </div>
+      <div>
+        <p  class="text-label">E-Mail:</p>
+        <input class="input-item" type="email" name="email">
+      </div>
+      <div>
+        <p class="text-label">Password:</p>
+        <input class="input-item" type="Password" name="Password">
+      </div>
+      <div>
+        <p class="text-label">Confirm Password:</p>
+        <input class="input-item" type="Password" name="Confirm Password">
+      </div>
+        <p class="text-label">Gender:</p>
+        <input type="radio" name="male" value="male" >Male
+        <input type="radio" name="male" value="female" >Female
+        <input type="radio" name="male" value="others" >Others
+      </div>
+      <div>
+        <p class="text-label">Security Questions:</p>
+        <select class="input-item" name="Security Questions">
+          <option value="job">I got a Job</option>
+          <option value="money">I got a Money</option>
+          <option value="iphone">I got a Iphone</option>
+        </select>
+      </div>
+      <div>
+        <textarea class="input-item" name="answer" rows="6" cols="30"></textarea>
+      </div>
+      <div>
+        <input class="input-label" type="checkbox" name="terms and condition" value="accept">I agree to accept my terms and conditions
+      </div>
+      <input type="submit" value="Register">
+    </form>
+  </body>
+</html>
